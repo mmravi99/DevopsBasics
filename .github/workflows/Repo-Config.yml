@@ -16,8 +16,7 @@ jobs:
       - name: Checkout Repository Settings Tool
         uses: actions/checkout@v1
         with:
-          repository: mmravi99/DevopsBasics
-          path: .DevopsBasics
+          repository: mmravi99/GITHUB-WORKFLOWS
           token: "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"        
 
       # Runs a set of commands using the runners shell
