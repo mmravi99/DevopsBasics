@@ -21,4 +21,4 @@ jobs:
       - name: Run Repository Setting Configuration Tool
         run: |
            pip3 install pygithub
-           python ./updaterepo.py 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 mmravi99/DevopsBasics
+           python3 .DevopsBasics/updaterepo.py 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 mmravi99/DevopsBasics
