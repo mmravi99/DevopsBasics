@@ -13,11 +13,12 @@ jobs:
     
   # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-      
-              
+      - name: Checkout Repository Settings Tool
+        uses: actions/checkout@v1
+        with:
+          repository: mmravi99/DevopsBasics
+          path: .DevopsBasics
+          token: "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"        
 
       # Runs a set of commands using the runners shell
       - name: Run Repository Setting Configuration Tool
