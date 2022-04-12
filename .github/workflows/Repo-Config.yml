@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Repository Settings Tool
         uses: actions/checkout@v2
         with:
-          repository: DevopsBasics
+          repository: mmravi99/DevopsBasics
           path: .DevopsBasics
           token: "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"
           persist-credentials: false
