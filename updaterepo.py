@@ -14,9 +14,6 @@ args = sys.argv[1:]
 token=sys.argv[1]
 repo_name=sys.argv[2]
 
-print("token",token)
-print("repo name",repo_name)
-
 g = Github(token)
 print(g.get_user().name)
 
