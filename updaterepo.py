@@ -5,7 +5,7 @@ import requests
 import json 
 
 # Repositories settings to apply
-allowsquashmerge = False
+allowsquashmerge = True
 allowrebasemerge = False
 allowmergecommit = True
 deletebranchonmerge = False
