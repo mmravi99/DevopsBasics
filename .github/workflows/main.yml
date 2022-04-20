@@ -10,14 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Checkout Repository Settings Tool
       uses: actions/checkout@v3
       with:
         repository: mmravi99/DevopsBasics
-        path: .GITHUB-WORKFLOWS
+        path: .DevopsBasics
         token: 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
-     
-    - name: run configurator
       run: |
         pip3 install pygithub
         python3 updaterepo.py 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 mmravi99/DevopsBasics
