@@ -18,7 +18,7 @@ print("token",token)
 print("repo name",repo_name)
 
 g = Github(token)
-print(f"Logged in as {g.get_user().name}")
+print("Logged in as", g.get_user().name)
 
 repo = g.get_repo(repo_name)
 branch_to_protect = g.get_repo(repo_name).get_branch(repo.default_branch)
