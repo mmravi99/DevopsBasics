@@ -1,0 +1,25 @@
+name: Repo Configurator
+on: 
+   workflow_dispatch:
+      inputs:
+        repo:
+          description: 'A repo to initialize the secrets.'
+          required: false
+jobs:
+  init-repo:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Checkout Repository Settings Tool
+      uses: actions/checkout@v3
+      with:
+        repository: mmravi99/DevopsBasics
+        path: .GITHUB-WORKFLOWS
+        token: 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
+     
+    - name: run configurator
+      run: |
+        pip3 install pygithub
+        python3 updaterepo.py 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 mmravi99/DevopsBasics
+      
+        
