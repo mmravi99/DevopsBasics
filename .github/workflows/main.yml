@@ -9,12 +9,11 @@ jobs:
   init-repo:
     runs-on: ubuntu-latest
     steps:
-    
-      uses: actions/checkout@v3
-      with:
-        repository: mmravi99/DevopsBasics
-        path: .DevopsBasics
-        token: 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
+      - uses: actions/checkout@v3
+        with:
+          repository: mmravi99/DevopsBasics
+          path: .DevopsBasics
+          token: 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
       
       
         
