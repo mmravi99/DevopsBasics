@@ -40,7 +40,6 @@ jobs:
         repository: mmravi99/BisCred.git
         ref: main
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Run Selenium tests
     - name: Build with Maven
       run: mvn test -Preg
     - name: Archive Artifacts
